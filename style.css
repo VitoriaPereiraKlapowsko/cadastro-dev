@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    width: 60%;
+    padding: 20px;
+    background: rgb(136, 104, 144);
+    background: linear-gradient(90deg, rgba(136, 104, 144, 1) 39%, rgba(2, 0, 36, 1) 100%, rgba(0, 212, 255, 1) 100%);
+
+}
+
+form fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    padding: 10px;
+}
+
+.dados-pessoais div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.dados-pessoais div input {
+    border: 1px solid red;
+    border-radius: 5px;
+    color: red;
+    padding: 5px;
+}
+
+.dados-pessoais div input::placeholder {
+    color: blue;
+}
+
+input[type="text"] {
+    border: 1px solid yellow;
+}
+
+input[type="text"] {
+    outline: 3px solid orange;
+    border: none;
+}
+
+.dados-profissionais,
+.mod-trabalho,
+.experiencia {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-botoes {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.form-botoes input {
+    border: none;
+    width: 70px;
+    height: 30px;
+}
+
+.form-botoes input[type="reset"] {
+    border: 1px solid rebeccapurple;
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+}
+
+.form-botoes input[type="submit"] {
+    border: 1px solid rebeccapurple;
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+}
