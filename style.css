@@ -16,18 +16,17 @@ section {
     width: 60%;
 
     margin: auto;
+
+    background-color: #d9afd9;
+    background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+    box-shadow: -1px 5px 5px 0px rgba(0, 0, 0, 0.41);
 }
 
 form {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
-    width: 60%;
     padding: 20px;
-    background: rgb(136, 104, 144);
-    background: linear-gradient(90deg, rgba(136, 104, 144, 1) 39%, rgba(2, 0, 36, 1) 100%, rgba(0, 212, 255, 1) 100%);
-
 }
 
 form fieldset {
@@ -45,7 +44,6 @@ form fieldset {
 }
 
 .dados-pessoais div input {
-    border: 1px solid red;
     border-radius: 5px;
     color: red;
     padding: 5px;
@@ -59,7 +57,7 @@ input[type="text"] {
     border: 1px solid yellow;
 }
 
-input[type="text"] {
+input[type="text"]:focus {
     outline: 3px solid orange;
     border: none;
 }
@@ -82,18 +80,22 @@ input[type="text"] {
     border: none;
     width: 70px;
     height: 30px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }
 
 .form-botoes input[type="reset"] {
-    border: 1px solid rebeccapurple;
+    border: 3px solid rebeccapurple;
     background-color: transparent;
     color: black;
     font-weight: bold;
 }
 
 .form-botoes input[type="submit"] {
-    border: 1px solid rebeccapurple;
-    background-color: transparent;
+    background-color: rebeccapurple;
     color: black;
     font-weight: bold;
 }
+
+.form-botoes input[type="submit"]:hover {
+    background-color: rgb(118, 0, 0);
+  }
